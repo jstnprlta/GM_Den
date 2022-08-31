@@ -13,7 +13,7 @@ module.exports = gql`
     token: String!
     username: String!
   }
-  input RegisterInput{
+  input RegisterInput {
     username: String!
     password: String!
     confirmPassword: String!
@@ -22,7 +22,7 @@ module.exports = gql`
   type Query {
     getPosts: [Post]
   }
-  type Mutation{
+  type Mutation {
     register(registerInput: RegisterInput): User!
   }
 `;
