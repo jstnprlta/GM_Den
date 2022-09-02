@@ -8,7 +8,7 @@ const postSchema = new Schema({
     {
       body: String,
       username: String,
-      cratedAt: String
+      createdAt: String,
     },
   ],
   likes: [
@@ -17,10 +17,10 @@ const postSchema = new Schema({
       createdAt: String,
     },
   ],
-  users: {
+  user: {
     type: Schema.Types.ObjectId,
     ref: "users",
   },
 });
 
-module.export = model('Post', postSchema);
+module.exports = model("Post", postSchema);
