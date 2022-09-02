@@ -10,7 +10,7 @@ app.use(bodyparser.urlencoded({ limit: "32mb", extended: true }));
 app.use(cors());
 
 const MONGO_URI =
-  "mongodb+srv:GEMDEN:GMDEN123@cluster0.by0uif2.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://GEMDEN:GMDEN123@cluster0.by0uif2.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5001;
 
 const connectDB = async () => {
