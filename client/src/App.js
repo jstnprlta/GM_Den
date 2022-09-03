@@ -1,10 +1,10 @@
 import React from 'react';
-import { Layout, Image, Typhography } from "antd";
+import { Layout, Image, Typography } from "antd";
 import Logo from "./images/mafia-png-transparent-mafia-images-16792.png"
 import Home from './components/Home';
 //import styles from './styles';
 
-const { Title } = Typhography;
+const { Title } = Typography;
 const { Header, Footer } = Layout;
 
 const App = () => {
