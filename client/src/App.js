@@ -17,7 +17,7 @@ const App = () => {
                 <Title style={styles.title}> TheGMDen</Title>
             </Header>
             <Home />
-            <Footer style={styles.footer}>2021 The Gentlemens Den</Footer>
+            <Footer style={styles.footer}>2022 The Gentlemens Den</Footer>
         </Layout>
     )
 }
