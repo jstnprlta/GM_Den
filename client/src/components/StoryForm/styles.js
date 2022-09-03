@@ -1,13 +1,16 @@
 const styles = {
     formTitle: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
+
+        display: "flex",
+        justificontent: "center",
+        alignItem: "center",
     },
     formCard: {
-      width: 390,
-      position: "fixed",
-      margin: "30px 10px",
+        width: 390,
+        position: "fixed",
+        margin: "30px 10px",
     },
-  };
-  export default styles;
+};
+
+export default styles;
+
