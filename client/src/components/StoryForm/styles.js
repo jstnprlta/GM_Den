@@ -1,5 +1,6 @@
 const styles = {
     formTitle: {
+
         display: "flex",
         justificontent: "center",
         alignItem: "center",
@@ -12,3 +13,4 @@ const styles = {
 };
 
 export default styles;
+
