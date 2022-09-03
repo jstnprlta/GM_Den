@@ -11,8 +11,19 @@ const getStories = async (req, res) => {
 };
 
 const createStory = (req, res) => {
+  const body = req.body;
+
+  const newStory = new Story({
+    ...body
+  });
+
+
   try {
-  } catch (error) {}
+    await newStory.save();
+    res.status(201).json(newStory);
+  } catch (error) {
+    res.status(409).json({ message: error.message });
+  }
 };
 
 export { getStories, createStory };
