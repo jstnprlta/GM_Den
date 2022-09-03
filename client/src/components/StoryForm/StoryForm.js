@@ -1,26 +1,18 @@
-import React from 'react'
-import {Card, Form, Input, Typography, Button} from "antd";
-import styles from './styles';
-
+import React from "react";
+import { Card, Form, Input, Typography, Button } from "antd";
+import styles from "./styles";
 
 const { Title } = Typography;
 
 function StoryForm() {
   const [form] = Form.useForm();
 
-  const onSubmit = () => {
-
-  };
-
+  const onSubmit = () => {};
 
   return (
     <Card
       style={styles.formCard}
-      title={
-        <Title level={4} style={styles.formTitle}>
-
-        </Title>
-      }
+      title={<Title level={4} style={styles.formTitle}></Title>}
     >
       <Form
         form={form}
@@ -29,15 +21,23 @@ function StoryForm() {
         layout="horizontal"
         size="middle"
         onFinish={onSubmit}
-      
       >
-        <Form.Item name="username" label="Username">
+        <Form.Item
+          name="username"
+          label="Username"
+          rules={[{ required: true }]}
+        >
           <Input allowClear />
         </Form.Item>
+        <Form.Item name="caption" label="Caption" rules={[{ required: true }]}>
+          <Input.TextArea allowClear autoSize={{ minRows: 2, MaxRows: 6 }} />
+        </Form.Item>
+        <Form.Item name="tags" label="Tags">
+          <Input.TextArea allowClear autoSize={{ minRows: 2, MaxRows: 6 }} />
+        </Form.Item>
       </Form>
-
     </Card>
-  )
+  );
 }
 
-export default StoryForm
+export default StoryForm;
