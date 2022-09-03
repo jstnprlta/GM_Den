@@ -1,4 +1,4 @@
-import mongoose from mongoose
+import mongoose from "mongoose";
 
 const storySchema = mongoose.Schema({
     caption: {type: String, required: true},
